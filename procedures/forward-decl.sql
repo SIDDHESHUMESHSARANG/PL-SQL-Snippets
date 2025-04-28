@@ -1,12 +1,5 @@
 SET SERVEROUTPUT ON;
 
-DECLARE
-    v_firstname employees.first_name%type;
-    v_lastname employees.last_name%type;
-    v_dept_name departments.department_name%type;
-    v_job_title job.job_title%type;
-    v_inp_job_title VARCHAR2(40) := '&v_inp_job_title';
-
 CREATE OR REPLACE PROCEDURE GET_EMP(
     first_name OUT VARCHAR2,
     last_name OUT VARCHAR2,
@@ -31,6 +24,15 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('AN ERROR OCCUREED '|| SQLERRM);
 END GET_EMP;
 /
+
+DECLARE
+    v_firstname employees.first_name%type;
+    v_lastname employees.last_name%type;
+    v_dept_name departments.department_name%type;
+    v_job_title job.job_title%type;
+    v_inp_job_title VARCHAR2(40) := '&v_inp_job_title';
+
+
 
 BEGIN
     GET_EMP(
