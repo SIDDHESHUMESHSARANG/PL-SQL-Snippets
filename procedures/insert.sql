@@ -19,7 +19,7 @@ BEGIN
         '&STREET_ADDRESS',
         &PINCODE,'&CITY',
         '&STATE_PROVINCE',
-        '&COUNTRY_ID')
+        '&COUNTRY_ID');
 
     DBMS_OUTPUT.PUT_LINE('1 ROW INSERTED!');
 
