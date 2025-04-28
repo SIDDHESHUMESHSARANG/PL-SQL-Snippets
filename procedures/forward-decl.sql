@@ -44,7 +44,7 @@ BEGIN
     );
 
     IF v_firstname IS NOT NULL THEN   
-        DBMS_OUTPUT.PUT_LINE('HEY, MY NAME IS '|| v_firstname || ', IM WORKING AS '|| job_title || ' IN THE '|| v_dept_name || ' DEPARTMENT.');
+        DBMS_OUTPUT.PUT_LINE('HEY, MY NAME IS '|| v_firstname || ', IM WORKING AS '|| v_job_title || ' IN THE '|| v_dept_name || ' DEPARTMENT.');
     END IF;
 END;
 /
