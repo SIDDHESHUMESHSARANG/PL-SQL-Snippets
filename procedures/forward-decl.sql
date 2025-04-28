@@ -37,6 +37,7 @@ BEGIN
         v_firstname,
         v_lastname,
         v_dept_name,
+        v_job_title, 
         v_inp_job_title
     );
 
